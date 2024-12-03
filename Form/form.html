@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example</title>
+</head>
+<body>
+    <form name="loginform" onsubmit="return validation()">
+       Enter username <input type="text" name="username"><br>
+       <br><center><input type="submit" name="submit"></center>
+    </form>
+    <script>function validation(){
+        x=document.forms["loginform"]["username"].value;
+        if(x==""){
+            alert("Name must be filled out");
+            return false;
+        }
+    
+    }</script>
+    
+</body>
+</html>
