@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="bg-black">
+        <h1 id="title" class="heading">Hello Everyone<span>text add</span></h1>
+        <h1>hello ji</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut rem quas cupiditate quis culpa voluptate, quod tenetur, commodi eaque vero modi, necessitatibus consectetur? Dicta excepturi quod at adipisci molestias laborum.</p>
+        <input type="password">
+        <ul>
+            <li>one</li>
+            <li>two</li>
+        </ul>
+        <ul>
+            <li class="list">apple</li>
+            <li class="list">mango</li>
+            <li class="list">orange</li>
+        </ul>
+
+
+        */
+            title.style.backgroundColor='green'
+            title.style.padding="15px"
+            title.style.borderRadius="15px"
+            document.getElementById('title').setAttribute('class','test')
+            title.textContent(gives all data inside hidden also)
+            title.innerText(don't gives all data)
+            title.innerHtml(gives all the value also html tag inside)
+
+            document.querySelector('h1')
+            document.querySelector('#title')
+            document.querySelector('.heading')
+            document.querySelector('input[type="password"]')
+            document.querySelector('p:first-child')
+
+
+           To change colour of the lists First item
+           const myul= document.querySelector('ul')
+           const first =myul.querySelector('li')
+           first.style.color="green"
+
+           const tempList=document.querySelectorAll('li')
+           {it is not an array cause map is not included in it}
+           tempList.style.color='green'$error$ 
+           tempList[0].style.color='green'
+           tempList.forEach(function (l){
+           l.style.color='green'
+           })
+
+           const tempClassList=document.getElementByClassName('list-item') 
+           --for each don't works here--
+           const myConvertedArray=Array.from(tempClassList)
+           myConvertedArray.forEach(finction(l){
+            li.style.color='orange'
+           })
+
+        /*
+
+        
+    </div>
+</body>
+</html>
