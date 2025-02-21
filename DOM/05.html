@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black;">
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+
+    
+</body>
+<script>
+    function addLanguage(langName){
+        const li=document.creteElement('li')
+        li.innerhtml='${langName}'
+        document.querySelector('.language')
+        appendChild(li)
+    }
+    addLanguage("python")
+    addLanguage("java")
+
+
+
+    function addOptiLanguage(langName){
+        const li=document.creteElement('li')
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+    }
+
+    addOptiLanguage("aalu")
+
+    //Edit
+    const secondlang=document.querySelector("li:nth-child(2)")
+    const li=document.createElement(li)
+    li.appendChild(document.createTextNode("logo"))
+    //li.textContent="logo"
+    secondlang.replaceWith(li)
+
+    //Edit
+    const firstlang=document.querySelector("li-first-child")
+    firstlang.outerHTML='<li>TypeScript</li>'
+
+    //Remove
+    const lastlang=document.querySelector("li:last-child")
+    lastLang.remove()
+</script>
+</html>
